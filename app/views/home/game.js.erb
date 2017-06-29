@@ -1,0 +1,6 @@
+$('.game_field').html("<%= j (render partial: 'coin') %>");
+
+var score = $("#score").text().split(" ")[1];
+var result = "score: " + (parseInt(score) + 1).toString();
+
+$('#score').text(result);
